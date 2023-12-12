@@ -1,4 +1,4 @@
-package com.app.canvasintro.ui.theme
+package com.app.canvasintro.presentation.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

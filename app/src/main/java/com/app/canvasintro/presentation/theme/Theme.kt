@@ -1,4 +1,4 @@
-package com.app.canvasintro.ui.theme
+package com.app.canvasintro.presentation.theme
 
 import android.app.Activity
 import android.os.Build

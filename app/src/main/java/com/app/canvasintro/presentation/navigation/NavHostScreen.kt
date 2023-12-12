@@ -7,6 +7,7 @@ import com.app.canvasintro.presentation.ui.CanvasIntroScreen
 import com.app.canvasintro.presentation.ui.HomeScreen
 import com.app.canvasintro.presentation.screens.Screen
 import com.app.canvasintro.presentation.theme.CanvasIntroTheme
+import com.app.canvasintro.presentation.ui.DesignRangoliScreen
 
 @Composable
 fun NavHostScreen() {
@@ -19,11 +20,16 @@ fun NavHostScreen() {
         ) {
             composable(route = Screen.Home.route) {
                 HomeScreen(
-                    navigateToCanvasIntro = { navController.navigate(Screen.CanvasIntro.route) }
+                    navController = navController
                 )
             }
             composable(route = Screen.CanvasIntro.route) {
                 CanvasIntroScreen(
+                    navigateBack = { navController.popBackStack() }
+                )
+            }
+            composable(route = Screen.DesignRangoli.route) {
+                DesignRangoliScreen(
                     navigateBack = { navController.popBackStack() }
                 )
             }
